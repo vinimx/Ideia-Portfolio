@@ -1,0 +1,136 @@
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #220126;
+    height: 8vh;
+    padding: 10px 60px 0px 60px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+    font-size: 20px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--rosa);
+    margin: 8px;
+    transition: 0.3s;
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }  
+
+  @media (max-width: 950px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      .logo{
+        font-size: 30px;
+      }
+    
+      .nav-list {
+        display: none;
+        position: absolute;
+        top: 8vh;
+        right: 0px;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+      }
+      .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+        padding: 50px;
+      }
+      .mobile-menu {
+        display: block;
+      }
+      .nav-list.active {
+        display: flex;
+        position: fixed; 
+        z-index: 9999;
+        text-transform: uppercase;
+        background: rgb(242,203,5);
+        background: linear-gradient(0deg, rgba(242,203,5,1) 6%, rgba(34,1,38,1) 82%);
+    }
+  }
+
+  @media (max-width: 300px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    .nav-list{
+        display: none;
+      }
+    
+    .nav-list.active {
+        display: flex;
+        position: fixed; 
+        z-index: 9999;
+        text-transform: uppercase;
+        background: rgb(242,203,5);
+        background: linear-gradient(0deg, rgba(242,203,5,1) 6%, rgba(34,1,38,1) 82%);
+    }
+    
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+      padding: 50px;
+    }
+  }

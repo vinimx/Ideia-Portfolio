@@ -1,0 +1,186 @@
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #220126;
+    transition: 0.5s;
+    padding-bottom: 50px;
+    
+  }
+  
+.projetos-titulo h3{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #F20544;
+    background: radial-gradient(circle farthest-corner at center center, #F20544 0%, #F2CB05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    margin-top: 35px;
+  }
+  
+.img-projetos{
+    width: 40%;
+    height: 40%;
+    margin-top: 50px; 
+    box-sizing: border-box;
+    opacity: 0.1s;
+    border-radius: 40px;
+    background: rgb(34,1,38);
+    background: radial-gradient(circle, rgba(34,1,38,1) 70%, rgba(74,7,140,1) 100%);
+    padding: 10px;
+  }
+  
+.img-projetos img{
+    margin-top: 20px;
+    width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 20px;
+  }
+  
+  
+.img-projetos:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+.img-projetos a{
+    width: 90%;
+    height: 90%;
+  }
+  
+.projetos-conteudo h5{
+    margin: 20px 20px;
+    color: var(--roxo-escuro);
+    font-size: 30px;
+    transition: 1s;
+  }
+  
+.projetos-conteudo h5:hover{
+    background: #7C05F2;
+    background: linear-gradient(to right, #7C05F2 0%, #F20544 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+@media (max-width: 950px){
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #220126;
+        transition: 0.5s;
+        padding-bottom: 50px;
+        
+      }
+    
+    .projetos-titulo h3{
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: #F20544;
+        background: radial-gradient(circle farthest-corner at center center, #F20544 0%, #F2CB05 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 10px;
+        margin-top: 35px;
+      }
+    
+    .img-projetos{
+          width: 70%;
+          height: 90%;
+          margin-top: 50px; 
+          box-sizing: border-box;
+          opacity: 0.1s;
+          border-radius: 40px;
+          background: rgb(34,1,38);
+        background: radial-gradient(circle, rgba(34,1,38,1) 70%, rgba(74,7,140,1) 100%);
+          padding: 5px;
+      }
+    
+    .img-projetos img{
+        margin-top: 20px;
+        width: 100%;
+        -moz-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+      }
+      
+    
+    .img-projetos a{
+        width: 90%;
+        height: 90%;
+      }
+    
+    .projetos-conteudo{
+        margin-top: 20px;
+        color: var(--roxo-escuro);
+        font-size: 28px;
+      }
+}
+
+@media (max-width: 300px){
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #220126;
+        transition: 0.5s;
+        padding-bottom: 50px;
+        
+      }
+    
+      .projetos-titulo h3{
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: #F20544;
+        background: radial-gradient(circle farthest-corner at center center, #F20544 0%, #F2CB05 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 10px;
+        margin-top: 35px;
+      }
+    
+      .img-projetos{
+        width: 70%;
+        height: 90%;
+        margin-top: 50px; 
+        box-sizing: border-box;
+        opacity: 0.1s;
+        border-radius: 40px;
+        background: rgb(34,1,38);
+    background: radial-gradient(circle, rgba(34,1,38,1) 70%, rgba(74,7,140,1) 100%);
+        padding: 5px;
+      }
+    
+      .img-projetos img{
+        margin-top: 20px;
+        width: 100%;
+        -moz-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+      }
+    
+      .img-projetos a{
+        width: 90%;
+        height: 90%;
+      }
+    
+      .projetos-conteudo{
+        margin-top: 20px;
+        color: var(--roxo-escuro);
+        font-size: 28px;
+      }
+}

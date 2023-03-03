@@ -1,0 +1,47 @@
+@import url("./header.css");
+@import url("./banner.css");
+@import url("./tecnologias.css");
+@import url("./projetos.css");
+@import url("contato.css");
+
+:root{
+    --rosa: #F20544;
+    --azul: #220126;
+    --roxo-claro: #7C05F2;
+    --roxo-escuro: #4A078C;
+    --amarelo: #F2CB05;
+    --branco: #B7FDF0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: rgb(242,5,68);
+  background: radial-gradient(circle, rgba(242,5,68,1) 0%, rgba(242,203,5,1) 46%, rgba(34,1,38,1) 73%);
+  background-repeat: no-repeat;
+
+}
+
+a{
+  color: var(--rosa);
+  transition: 1s;
+}
+
+a:hover {
+  opacity: 0.7;
+  border-bottom: 1px solid var(--roxo-escuro);
+  padding: 5px
+}
+
+.efeito-reveal{
+  visibility: hidden;
+}
+
+main{
+  width: 100%;
+  overflow-x:hidden;
+}

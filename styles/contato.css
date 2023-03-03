@@ -1,0 +1,125 @@
+.contato-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-top: 35px;
+    background: var(--azul);
+    padding: 50px;
+    
+  }
+  
+  .contato-titulo h3{
+    margin-top: 0px;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #F20544;
+    background: radial-gradient(circle farthest-corner at center center, #F20544 0%, #F2CB05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-align: center;
+  
+  }
+  
+  .icones-contato{
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    gap: 1em;
+  }
+  
+  .icones-contato i{
+    transition: 1s;
+  }
+  
+  .icones-contato i:hover{
+    color: var(--rosa);
+    font-size: 45px;
+  }
+  
+  
+  @media (max-width: 950px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .contato-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+      margin-top: 35px;
+      background: var(--azul);
+      
+    }
+  
+    .contato-titulo h3{
+      margin-top: 0px;
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+      background: #F20544;
+      background: radial-gradient(circle farthest-corner at center center, #F20544 0%, #F2CB05 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      text-align: center;
+  
+    }
+  
+    .icones-contato{
+      margin: 50px 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      gap: 1em;
+    }
+}
+
+@media (max-width: 300px){
+    .contato-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        margin-top: 35px;
+        background: var(--azul);
+        
+      }
+    
+      .contato-titulo h3{
+        margin-top: 50px;
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: #F20544;
+        background: radial-gradient(circle farthest-corner at center center, #F20544 0%, #F2CB05 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        text-align: center;
+    
+      }
+    
+      .icones-contato{
+        margin: 50px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        gap: 1em;
+      }
+    
+      .icones-contato i{
+        transition: 1s;
+      }
+    
+}
